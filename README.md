@@ -20,5 +20,5 @@ The advantages i have had so far
 
 - Register as observer for all your notification at one place
 - Make code more readable
-- Since we use a block based API it makes easy to use and more declarative.
+- Since we use a block based API it makes it easy to use and more declarative.
 
