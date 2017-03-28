@@ -10,3 +10,7 @@ and voila you are done.
 
 Don't ever worry about remove observer again!!!
 
+The above code contains 
+1)An example project
+2)Tests to validate it
+
