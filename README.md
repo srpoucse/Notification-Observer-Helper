@@ -14,3 +14,4 @@ The above code contains
 1)An example project
 2)Tests to validate it
 
+Please look into NotificationObserverHelper.swift for more details.
