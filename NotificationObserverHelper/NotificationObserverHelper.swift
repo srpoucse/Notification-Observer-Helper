@@ -36,7 +36,7 @@ class NotificationObserver : NSObject {
     let handler : (Notification)->(Swift.Void)
     let notificationCenter : NotificationCenter
     private var observer : NSObjectProtocol
-    init(_ notificationCenter: NotificationCenter = NotificationCenter.default, name : Notification.Name, handler: @escaping (Notification)->(Swift.Void)) {
+    required init(_ notificationCenter: NotificationCenter = NotificationCenter.default, name : Notification.Name, handler: @escaping (Notification)->(Swift.Void)) {
         self.notificationCenter = notificationCenter
         self.name = name
         self.handler = handler
