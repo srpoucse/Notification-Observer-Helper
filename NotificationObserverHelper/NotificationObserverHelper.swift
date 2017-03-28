@@ -21,37 +21,28 @@
  SOFTWARE.
  */
 
+import Foundation
 
-import UIKit
-
-class ViewController: UIViewController {
-
-    var keyboardObserver : NotificationObserver?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        keyboardObserver = NotificationObserver(name: NSNotification.Name.UIKeyboardDidShow, handler: { (note) -> (Void) in
-            print("Did Show Keyboard")
-        })
-        
-        //create a timer that set the keyboard observer to nil and there by you will not receive any more notification and observer is release safely
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
-            self.keyboardObserver = nil
-            timer.invalidate()
+extension NotificationCenter {
+    func addObserver(name: Notification.Name, using block:@escaping (Notification)->(Swift.Void)) -> NSObjectProtocol {
+        return addObserver(forName: name, object: nil, queue: nil) { note in
+            block(note)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
-
-extension ViewController : UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+class NotificationObserver : NSObject {
+    let name : Notification.Name
+    let handler : (Notification)->(Swift.Void)
+    let notificationCenter : NotificationCenter
+    private var observer : NSObjectProtocol
+    init(_ notificationCenter: NotificationCenter = NotificationCenter.default, name : Notification.Name, handler: @escaping (Notification)->(Swift.Void)) {
+        self.notificationCenter = notificationCenter
+        self.name = name
+        self.handler = handler
+        self.observer = notificationCenter.addObserver(name: name, using: handler)
+    }
+    deinit {
+        NotificationCenter.default.removeObserver(observer)
     }
 }

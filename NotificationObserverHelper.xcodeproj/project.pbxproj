@@ -13,6 +13,7 @@
 		56DE4E8A1E8AC532006BB4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DE4E891E8AC532006BB4D4 /* Assets.xcassets */; };
 		56DE4E8D1E8AC532006BB4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE4E8B1E8AC532006BB4D4 /* LaunchScreen.storyboard */; };
 		56DE4E981E8AC532006BB4D4 /* NotificationObserverHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4E971E8AC532006BB4D4 /* NotificationObserverHelperTests.swift */; };
+		56DE4EA31E8AC552006BB4D4 /* NotificationObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		56DE4E931E8AC532006BB4D4 /* NotificationObserverHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationObserverHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE4E971E8AC532006BB4D4 /* NotificationObserverHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverHelperTests.swift; sourceTree = "<group>"; };
 		56DE4E991E8AC532006BB4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserverHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		56DE4E811E8AC532006BB4D4 /* NotificationObserverHelper */ = {
 			isa = PBXGroup;
 			children = (
+				56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */,
 				56DE4E821E8AC532006BB4D4 /* AppDelegate.swift */,
 				56DE4E841E8AC532006BB4D4 /* ViewController.swift */,
 				56DE4E861E8AC532006BB4D4 /* Main.storyboard */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DE4EA31E8AC552006BB4D4 /* NotificationObserverHelper.swift in Sources */,
 				56DE4E851E8AC532006BB4D4 /* ViewController.swift in Sources */,
 				56DE4E831E8AC532006BB4D4 /* AppDelegate.swift in Sources */,
 			);
