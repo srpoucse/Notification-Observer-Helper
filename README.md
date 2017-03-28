@@ -15,3 +15,10 @@ The above code contains
 2)Tests to validate it
 
 Please look into NotificationObserverHelper.swift for more details.
+
+The advantages i have had so far 
+
+- Register as observer for all your notification at one place
+- Make code more readable
+- Since we use a block based API it makes easy to use and more declarative.
+
