@@ -56,7 +56,12 @@ func keyboardDidShow(note: Notification) {
 
 Examples using Utility 
 
-1)var observer = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardDidShow, object: nil, queue: nil){}
+1)Create a variable 
+
+var keyboardObserver = NotificationObserver(name: NSNotification.Name.UIKeyboardDidShow, handler: { (note) -> (Void) in
+        print("Did Show Keyboard")
+    })
+
 
 ------------------------------------------------------------------------------------------
 
