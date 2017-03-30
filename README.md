@@ -1,5 +1,8 @@
 # Notification-Observer-Helper
 When using block based API to register as an observer for notification from NSNotificationCenter, we will have to remove observer manually. 
+or when using selector based API to register as an observer for notification from NSNotificationCenter, we will have to create a new function to respond to the notification.
+
+
 
 This utility aims at solving this problem. 
 
@@ -8,7 +11,7 @@ This utility aims at solving this problem.
 
 and voila you are done.
 
-Don't ever worry about removing observer again!!!
+Don't ever worry about removing observer or creating a new function again!!!
 
 The above code contains 
 
@@ -23,9 +26,10 @@ The advantages i have had so far
 - Makes code more readable as we do not create any more functions to register as selectors.
 - We use a block based API and thus makes it easy to use and declarative.
 
-------------------------------------------------------------------------------------------
 
 Examples Without using Utility 
+
+------------------------------------------------------------------------------------------
 
 1)Add Observer
 
@@ -38,7 +42,6 @@ NotificationCenter.default.removeObserver(observer)
 
 ------------------------------------------------------------------------------------------
 
-Examples Without using Utility 
 
 1)Add Observer
 
@@ -46,7 +49,7 @@ Examples Without using Utility
 NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow(note:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
 }
 
-2)Write a function that responds to an observer 
+2)Write a function that responds to a notification 
 
 func keyboardDidShow(note: Notification) {
 
@@ -54,7 +57,14 @@ func keyboardDidShow(note: Notification) {
 
 ------------------------------------------------------------------------------------------
 
+
+
+
 Examples using Utility 
+
+------------------------------------------------------------------------------------------
+
+
 
 1)Create a variable 
 
@@ -63,7 +73,3 @@ var keyboardObserver = NotificationObserver(name: NSNotification.Name.UIKeyboard
     })
 
 
-------------------------------------------------------------------------------------------
-
-Thats it!!! 
-Dont worry about creating a new function or removing observer anymore! 
