@@ -22,3 +22,43 @@ The advantages i have had so far
 - Register as observer for all your notification at one place.
 - Makes code more readable as we do not create any more functions to register as selectors.
 - We use a block based API and thus makes it easy to use and declarative.
+
+------------------------------------------------------------------------------------------
+
+Examples Without using Utility 
+
+1)Add Observer
+
+var observer = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardDidShow, object: nil, queue: nil){}
+}
+
+2)Remove observer 
+
+NotificationCenter.default.removeObserver(observer)
+
+------------------------------------------------------------------------------------------
+
+Examples Without using Utility 
+
+1)Add Observer
+
+
+NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow(note:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+}
+
+2)Write a function that responds to an observer 
+
+func keyboardDidShow(note: Notification) {
+
+}
+
+------------------------------------------------------------------------------------------
+
+Examples using Utility 
+
+1)var observer = NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardDidShow, object: nil, queue: nil){}
+
+------------------------------------------------------------------------------------------
+
+Thats it!!! 
+Dont worry about creating a new function or removing observer anymore! 
