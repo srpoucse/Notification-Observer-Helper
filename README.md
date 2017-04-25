@@ -1,6 +1,5 @@
 # Notification-Observer-Helper
-When using block based API to register as an observer for notification from NSNotificationCenter, we will have to remove observer manually. 
-or when using selector based API to register as an observer for notification from NSNotificationCenter, we will have to create a new function to respond to the notification.
+When using block based API to register as an observer for notification from NSNotificationCenter, we will have to remove observer manually or when using selector based API to register as an observer for notification from NSNotificationCenter, we will have to create a new function to respond to the notification.
 
 
 
