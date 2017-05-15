@@ -27,6 +27,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var keyboardObserver : NotificationObserver?
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         keyboardObserver = NotificationObserver(name: NSNotification.Name.UIKeyboardDidShow, handler: { (note) -> (Void) in
@@ -34,12 +36,14 @@ class ViewController: UIViewController {
         })
         
         //create a timer that set the keyboard observer to nil and there by you will not receive any more notification and observer is release safely
-        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
-            self.keyboardObserver = nil
-            timer.invalidate()
-        }
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(deleteObserver), userInfo: nil, repeats: false)
     }
 
+    func deleteObserver() {
+        self.keyboardObserver = nil
+        timer?.invalidate()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
