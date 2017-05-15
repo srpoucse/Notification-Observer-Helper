@@ -22,7 +22,6 @@
  */
 
 import XCTest
-@testable import NotificationObserverHelper
 
 class NotificationObserverHelperTests: XCTestCase {
     

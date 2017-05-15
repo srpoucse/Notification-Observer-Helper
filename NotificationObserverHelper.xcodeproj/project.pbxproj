@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		562788CF1ECA379B00E96BDC /* NotificationObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */; };
 		56DE4E831E8AC532006BB4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4E821E8AC532006BB4D4 /* AppDelegate.swift */; };
 		56DE4E851E8AC532006BB4D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4E841E8AC532006BB4D4 /* ViewController.swift */; };
 		56DE4E881E8AC532006BB4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE4E861E8AC532006BB4D4 /* Main.storyboard */; };
@@ -150,11 +151,13 @@
 					56DE4E7E1E8AC532006BB4D4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UE22YNAKHW;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					56DE4E921E8AC532006BB4D4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UE22YNAKHW;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 56DE4E7E1E8AC532006BB4D4;
 					};
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562788CF1ECA379B00E96BDC /* NotificationObserverHelper.swift in Sources */,
 				56DE4E981E8AC532006BB4D4 /* NotificationObserverHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +420,7 @@
 				56DE4E9E1E8AC532006BB4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56DE4E9F1E8AC532006BB4D4 /* Build configuration list for PBXNativeTarget "NotificationObserverHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				56DE4EA11E8AC532006BB4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

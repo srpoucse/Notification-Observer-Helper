@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        keyboardObserver = NotificationObserver(name: NSNotification.Name.UIKeyboardDidShow, handler: { (note) -> (Void) in
+        keyboardObserver = NotificationObserver(name: Notification.Name.UIKeyboardDidShow, handler: { (note) -> (Void) in
             print("Did Show Keyboard")
         })
         

@@ -24,7 +24,7 @@
 import Foundation
 
 extension NotificationCenter {
-    func addObserver(name: Notification.Name, using block:@escaping (Notification)->(Swift.Void)) -> NSObjectProtocol {
+    func addObserver(_ name: Notification.Name, using block:@escaping (Notification)->(Swift.Void)) -> NSObjectProtocol {
         return addObserver(forName: name, object: nil, queue: nil) { note in
             block(note)
         }
@@ -35,12 +35,12 @@ class NotificationObserver : NSObject {
     let name : Notification.Name
     let handler : (Notification)->(Swift.Void)
     let notificationCenter : NotificationCenter
-    private var observer : NSObjectProtocol
+    fileprivate var observer : NSObjectProtocol
     required init(_ notificationCenter: NotificationCenter = NotificationCenter.default, name : Notification.Name, handler: @escaping (Notification)->(Swift.Void)) {
         self.notificationCenter = notificationCenter
         self.name = name
         self.handler = handler
-        self.observer = notificationCenter.addObserver(name: name, using: handler)
+        self.observer = notificationCenter.addObserver(name, using: handler)
     }
     deinit {
         NotificationCenter.default.removeObserver(observer)
