@@ -8,6 +8,5 @@ s.homepage      = 'https://github.com/srpoucse/Notification-Observer-Helper.git'
 s.summary       =  'iOS Notification Observer Helper Utility'
 s.license       = { :type => 'MIT', :file => 'LICENSE'}
 s.authors       =  { 'RATNA PAUL SAKA' => 'pauljason89442@gmail.com' }
-s.source_files  = 'NotificationObserverHelper/**/*.{swift}'
-s.resources     = 'NotificationObserverHelper/**/*.{storyboard,xib,xcassets}'
+s.source_files  = 'NotificationObserverHelper/Utility/*.{swift}'
 end

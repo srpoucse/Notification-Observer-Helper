@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		562788CF1ECA379B00E96BDC /* NotificationObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */; };
+		562788F31ECA3E1600E96BDC /* NotificationObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562788F21ECA3E1600E96BDC /* NotificationObserverHelper.swift */; };
 		56DE4E831E8AC532006BB4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4E821E8AC532006BB4D4 /* AppDelegate.swift */; };
 		56DE4E851E8AC532006BB4D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4E841E8AC532006BB4D4 /* ViewController.swift */; };
 		56DE4E881E8AC532006BB4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE4E861E8AC532006BB4D4 /* Main.storyboard */; };
 		56DE4E8A1E8AC532006BB4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DE4E891E8AC532006BB4D4 /* Assets.xcassets */; };
 		56DE4E8D1E8AC532006BB4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE4E8B1E8AC532006BB4D4 /* LaunchScreen.storyboard */; };
 		56DE4E981E8AC532006BB4D4 /* NotificationObserverHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4E971E8AC532006BB4D4 /* NotificationObserverHelperTests.swift */; };
-		56DE4EA31E8AC552006BB4D4 /* NotificationObserverHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		562788F21ECA3E1600E96BDC /* NotificationObserverHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserverHelper.swift; sourceTree = "<group>"; };
 		56DE4E7F1E8AC532006BB4D4 /* NotificationObserverHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationObserverHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE4E821E8AC532006BB4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DE4E841E8AC532006BB4D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +38,6 @@
 		56DE4E931E8AC532006BB4D4 /* NotificationObserverHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationObserverHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE4E971E8AC532006BB4D4 /* NotificationObserverHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserverHelperTests.swift; sourceTree = "<group>"; };
 		56DE4E991E8AC532006BB4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationObserverHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		562788F11ECA3E1600E96BDC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				562788F21ECA3E1600E96BDC /* NotificationObserverHelper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		56DE4E761E8AC532006BB4D4 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +87,7 @@
 		56DE4E811E8AC532006BB4D4 /* NotificationObserverHelper */ = {
 			isa = PBXGroup;
 			children = (
-				56DE4EA21E8AC552006BB4D4 /* NotificationObserverHelper.swift */,
+				562788F11ECA3E1600E96BDC /* Utility */,
 				56DE4E821E8AC532006BB4D4 /* AppDelegate.swift */,
 				56DE4E841E8AC532006BB4D4 /* ViewController.swift */,
 				56DE4E861E8AC532006BB4D4 /* Main.storyboard */,
@@ -207,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56DE4EA31E8AC552006BB4D4 /* NotificationObserverHelper.swift in Sources */,
+				562788F31ECA3E1600E96BDC /* NotificationObserverHelper.swift in Sources */,
 				56DE4E851E8AC532006BB4D4 /* ViewController.swift in Sources */,
 				56DE4E831E8AC532006BB4D4 /* AppDelegate.swift in Sources */,
 			);
@@ -217,7 +224,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				562788CF1ECA379B00E96BDC /* NotificationObserverHelper.swift in Sources */,
 				56DE4E981E8AC532006BB4D4 /* NotificationObserverHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
