@@ -9,4 +9,5 @@ s.summary       =  'iOS Notification Observer Helper Utility'
 s.license       = { :type => 'MIT', :file => 'LICENSE'}
 s.authors       =  { 'RATNA PAUL SAKA' => 'pauljason89442@gmail.com' }
 s.source_files  = 'NotificationObserverHelper/NotificationObserverHelper.swift'
+s.swift_version = '4.2'
 end
