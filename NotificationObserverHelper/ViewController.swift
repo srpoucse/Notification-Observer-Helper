@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        keyboardObserver = NotificationObserver(name: Notification.Name.UIKeyboardDidShow, handler: { (note) -> (Void) in
+        keyboardObserver = NotificationObserver(name: UIResponder.keyboardDidShowNotification, handler: { (note) -> (Void) in
             print("Did Show Keyboard")
         })
         
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(deleteObserver), userInfo: nil, repeats: false)
     }
 
-    func deleteObserver() {
+    @objc func deleteObserver() {
         self.keyboardObserver = nil
         timer?.invalidate()
     }
