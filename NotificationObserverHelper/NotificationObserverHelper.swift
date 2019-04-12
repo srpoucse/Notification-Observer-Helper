@@ -31,12 +31,12 @@ extension NotificationCenter {
     }
 }
 
-class NotificationObserver : NSObject {
+public class NotificationObserver : NSObject {
     let name : Notification.Name
     let handler : (Notification)->(Swift.Void)
     let notificationCenter : NotificationCenter
     fileprivate var observer : NSObjectProtocol
-    required init(_ notificationCenter: NotificationCenter = NotificationCenter.default, name : Notification.Name, handler: @escaping (Notification)->(Swift.Void)) {
+    required public init(_ notificationCenter: NotificationCenter = NotificationCenter.default, name : Notification.Name, handler: @escaping (Notification)->(Swift.Void)) {
         self.notificationCenter = notificationCenter
         self.name = name
         self.handler = handler
